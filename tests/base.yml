@@ -1,0 +1,7 @@
+test:
+  list:
+      - list-property: base
+        attributes:
+            inner-property: base 
+  test-property: hello
+  override-property: world

@@ -1,0 +1,14 @@
+test:
+  list:
+    - list-property: base
+      attributes:
+        inner-property: base
+    - list-property: one
+      attributes:
+        inner-property: one
+    - list-property: two
+      attributes:
+        inner-property: two
+  new-property: hello world
+  override-property: everyone
+  test-property: hello

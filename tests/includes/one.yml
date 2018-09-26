@@ -1,0 +1,6 @@
+test:
+  list:
+      - list-property: one
+        attributes:
+            inner-property: one
+  override-property: everyone

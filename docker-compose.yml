@@ -1,0 +1,8 @@
+test:
+  image: node:4-alpine
+  volumes:
+    - .:/module
+  working_dir: /module
+  command: sh -c "
+    node cli.js -i tests/base.yml tests/includes/*.yml -o tests/out.yml &&
+    cmp tests/out.yml tests/expected.yml"

@@ -1,0 +1,38 @@
+{
+  "name": "combine-yaml-cli",
+  "version": "0.0.0",
+  "description": "CLI utility for combining YAML files",
+  "main": "index.js",
+  "bin": {
+    "combine-yaml": "./cli.js"
+  },
+  "keywords": [
+    "combine",
+    "yaml",
+    "cli"
+  ],
+  "author": {
+    "name": "Jonathan Yee",
+    "email": "jonyeezs@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonyeezs/combine-yaml-cli"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run test:lint && docker-compose run --rm test",
+    "test:ci": "npm run test:lint && docker-compose run test",
+    "test:lint": "standard"
+  },
+  "dependencies": {
+    "glob": "^7.1.0",
+    "js-yaml": "^3.7.0",
+    "mergejson": "^1.1.0",
+    "yamljs": "^0.3.0",
+    "yargs": "^8.0.1"
+  },
+  "devDependencies": {
+    "standard": "^10.0.0"
+  }
+}

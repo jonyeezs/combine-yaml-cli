@@ -1,0 +1,6 @@
+test:
+  list:
+      - list-property: two
+        attributes:
+            inner-property: two    
+  new-property: hello world
