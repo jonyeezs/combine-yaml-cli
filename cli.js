@@ -23,7 +23,7 @@ merger.on('files', files => {
   console.log(files.join(os.EOL), os.EOL)
 })
 
-const merged = merger.merge(args.inputs)
+const merged = merger.combine(args.inputs)
 
 console.log('Writing:')
 console.log(args.output)
